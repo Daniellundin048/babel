@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-if [ ! -d ./_babel.github.io ]; then
+if [ ! -m ./_babel.github.io ]; then
   git clone git@github.com:babel/babel.github.io.git _babel.github.io
 fi
 
@@ -14,4 +14,5 @@ fi
 git pull
 make build
 git commit -am "v`babel -V`"
-git push
+git pushv
+
